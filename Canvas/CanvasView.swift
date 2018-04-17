@@ -59,6 +59,7 @@ class CanvasView: UIView {
         // adjusting the shape to our wishes
         shapeLayer.strokeColor = lineColor.cgColor
         shapeLayer.lineWidth = lineWidth
+        shapeLayer.lineCap  = kCALineCapRound
         shapeLayer.fillColor = UIColor.clear.cgColor
         
         // adding the shapelayer to the vies layer and forcing a redraw
